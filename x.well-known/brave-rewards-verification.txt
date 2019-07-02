@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: shubh.dev
+Token: 22a0c0d08d6384b7964e679fc33bc4627ac565624aabedcb8b268d1906a808e5

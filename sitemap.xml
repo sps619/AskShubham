@@ -1,20 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with xml-sitemaps -->
-
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<link type="text/css" id="dark-mode" rel="stylesheet" href=""/>
+<style type="text/css" id="dark-mode-custom-style"/>
+<!--
+ created with Free Online Sitemap Generator www.xml-sitemaps.com 
+-->
 <url>
-  <loc>https://shubhamps.com/</loc>
-  <lastmod>2019-05-09T21:45:47+00:00</lastmod>
+<loc>https://askshubham.com/</loc>
+<lastmod>2019-12-15T12:12:20+00:00</lastmod>
 </url>
-      <url>
-            <loc>https://shubhamps.com/privacy-policy/basketball-score-chart</loc>
+<url>
+            <loc>https://askshubham.com/privacy-policy/basketball-score-chart</loc>
             <lastmod>2019-05-14T21:47:47+00:00</lastmod>
       </url>
-
-
 </urlset>

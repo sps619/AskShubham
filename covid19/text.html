@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js" ></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+
+</head>
+<body>
+<canvas id="line-chart" width="800" height="450"></canvas>
+
+
+
+<script>
+    var labels=[];
+    var datas=[];
+    fetch('https://api.covid19india.org/data.json').then((response) => {
+    response.json().then((data) => {
+        console.log(data.cases_time_series);
+        var count = data.cases_time_series.length;
+        
+        for (var i = 1; i < count; i++) 
+        {
+             //labels=data.cases_time_series[i].totalconfirmed;
+             //data=data.cases_time_series[i].date;
+             datas.push(parseInt(data.cases_time_series[i].totalconfirmed));
+             labels.push(data.cases_time_series[i].date);
+            //Add the data rows.
+            
+
+
+        }
+       console.log(labels);
+    })
+}).catch((error) => {
+
+});
+
+ console.log(datas);
+new Chart(document.getElementById("line-chart"), {
+  type: 'line',
+
+  data: {
+    labels:labels,
+    datasets: [{ 
+        data: datas,
+    
+        borderColor:"#3e95cd",
+        fill: false
+      }, 
+    ]
+  },
+  options: {
+    title: {
+      display: true,
+      text: 'World population per region (in millions)'
+    }
+  }
+});
+</script>
+
+</body>
+</html>

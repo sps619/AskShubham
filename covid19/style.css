@@ -1,0 +1,363 @@
+body
+{
+   background-color: #fff;
+   color: #000;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(Preloader_3.gif) center no-repeat #fff;
+}
+.navbar .nav_img
+{
+  height: 4rem;
+}
+.nav-link
+{
+	font-family: 'Gilroy', sans-serif;
+	font-weight: 700;
+}
+  
+.navbar ul li
+{
+   padding-right: 5em;
+}
+
+
+
+.covid_title h3, .stats_title
+{
+	
+	
+	font-family: 'Roboto Mono', monospace !important;
+}
+
+
+
+
+.covid_title .alrt
+{
+	background-color: #ffebee !important; 
+	font-family: 'Roboto Mono', monospace;
+	font-weight: bold; 
+}
+
+
+.covid_defn
+{
+  
+  	
+  	font-family: 'PT Serif', serif !important;
+  	font-weight: 900;
+	font-size: 1.2em;
+	margin-top: 6% !important;
+} 
+
+
+.stats_title
+{
+	font-family: courier;
+	font-weight: bold;
+
+}
+.stats_num
+{
+	font-family: courier;
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+.covid_sym
+{
+	background-color:#0e2243 	;
+}
+
+
+.conta_title
+{
+	font-family: 'Quattrocento Sans', sans-serif;
+	font-size: 1.3em;
+	font-weight: 500;
+	color: #1de9b6;
+}
+.cont_title ,.symp_title
+{
+   font-family: 'Quattrocento Sans', sans-serif;
+   font-weight: bold;	
+}
+.prvnt_title
+{
+	 font-family: 'Quattrocento Sans', sans-serif;
+	
+	font-weight: 800;
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+}
+
+
+.sympt_img
+{
+	margin-top: 10%;
+}
+
+.cont_box
+{
+	padding-top: 7%;
+}
+
+.cont_det
+{
+	padding-top: 5%;
+}
+
+
+
+
+
+
+.btns 
+{
+   margin: 0;
+   padding: 0;
+   font-weight: bold;
+   font-size: 1.3em;
+   margin-top: 7%;
+}
+.btns a
+{
+	margin-left: 0;
+}
+
+
+
+.sytm ,.cnt , .symtm 
+{
+	font-family: 'Roboto Mono', monospace ;
+	font-size: 1.3em;
+}
+
+.cnt-title
+{
+	margin-left: 28%;
+}
+.cnt .bottle
+{
+	margin-left: 20%;
+}
+
+.card_title
+ 
+{
+  	font-family: courier  ;
+  font-weight: 900;	
+}
+.card_txt 
+{
+	font-size: 1.2em;
+		font-family: verdana;
+		margin-top: 10%;
+		padding: 0;
+		margin-bottom: 0;
+
+}
+
+
+.handwsh_txt
+{
+	padding: 0;
+	margin:0;
+	margin-top: 15%;
+}
+
+
+.resource_title
+{
+	font-family: 'Roboto Mono', monospace ;
+  font-weight: bold;
+}
+
+.res_list li
+{
+	font-family: Gilroy ;
+  font-weight: bold;
+  list-style: none;
+  padding-top: 2%;
+}
+
+.res_list a
+{
+	font-family: Courier;
+	font-size: 1.3em;
+}
+
+.daily_num
+{
+   margin-top: 0;
+}
+
+
+.state_title
+{
+	
+	font-family: Arial;
+}
+.state_title strong
+{
+	font-size: 1.5em;
+}
+
+@media only screen and (max-width: 770px)
+{
+  
+.navbar li a
+{
+ padding-left: 0; 
+	font-weight: 800;
+	font-size: 1.2em;
+
+}
+  .daily_num
+{
+	margin-top: 0;
+}
+
+
+}
+
+
+
+@media only screen and (max-width: 570px)
+{
+	.case_box
+	{
+      margin-top: 1.4em;
+	}
+    
+    .navbar .nav_img
+   {
+  height: 2.5rem;
+   }
+
+   .stats_title
+{
+	font-size: 1em;
+	font-family: courier;
+	font-weight: bold;
+}
+
+.stats_num
+{
+	font-size: 1.1rem;
+	font-family: 'Gilroy', sans-serif;
+	font-weight: 700;
+}
+.daily_stats
+{
+	font-size: 1rem;
+		font-family: 'Gilroy', sans-serif;
+}
+ .stats_row
+   {
+   	padding-left: 15%;
+   }
+
+   .col-sm-3
+   {
+   	width: 40%;
+   	margin-top: 5%;
+   }
+
+   .daily_num
+{
+	margin-top: 0%;
+}	
+
+.sympt_img img
+{
+	padding:0;
+	margin: 0;
+
+}
+.cont_img img
+{
+	height: 5em;
+}
+.ani_img
+{
+	display: none;
+}
+.cont_det
+{
+	font-size: .8em;
+}
+
+.res_list a
+{
+	font-family: Courier;
+	font-size: .8em;
+}
+.card-img-top
+{
+	height: 15em;
+	width: 20em;
+	padding-left: 15%;
+}
+.card
+{
+	
+}
+
+.covid_sym
+{
+	padding: 0;
+}
+}
+
+@media only screen and (max-width: 990px)
+{
+.illus img
+{
+  height: 22em;
+  width: 27em;
+  text-align: center;
+}
+}
+
+
+}
+@media only screen and (max-width: 410px)
+{
+.card
+{
+	
+	margin-left: 0;
+}
+.card-img-top img
+{
+	width: 10%;
+	
+}
+ .covid_title h3
+{
+   font-size: .5em;
+}
+}

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Covid-19 Cases</title>
+
+     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+      
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+     <link rel="icon" href="shortcut.png">
+ 
+
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700&display=swap" rel="stylesheet">
+
+
+  
+	<script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> 
+	</script> 
+	
+
+
+    
+<!-- Google Fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.1/css/mdb.min.css" rel="stylesheet">
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.1/js/mdb.min.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css">
+
+
+<link rel="stylesheet" type="text/css" href="tracker.css">
+
+<script type="text/javascript">
+   $(window).on('load',function() {
+    // Animate loader off screen
+    $(".se-pre-con").fadeOut("slow");;
+  });
+ </script>
+
+</head>
+<body>
+
+<div class="se-pre-con"></div>
+
+
+<nav class="navbar navbar-expand-lg navbar-light light-color">
+    <a class="navbar-brand" href="#"><img src="coronavirus.png" class="img-fluid nav_img"  height="20" ></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto" id="navLink">
+            <li class="nav-item ">
+               <a class="nav-link waves-effect waves-light" id="clrC" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link waves-effect waves-light" id="clrC1" href="#">Resources</a>
+            </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle waves-effect waves-light"  id="navbarDropdownMenuLink"               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">COVID-19 TRACKER</a>
+                <div class="dropdown-menu dropdown-info" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item waves-effect waves-light" href="tracker.html" id="clrC">India</a>
+                    <a class="dropdown-item waves-effect waves-light" href="worldwide.html" id="clrC">Worldwide</a>
+                  
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link waves-effect waves-light" id="clrC2" href="#">FAQs</a>
+            </li>
+            <li class="nav-item" > 
+                     <a class="btn-floating btn-sm btn-light mt-2" onclick="toggle()" id="togglebtn">Try Dark Mode !</a>
+            </li>         
+           
+        </ul>
+        
+    </div>
+</nav>
+<div class="container-fluid">
+	<div class="row mt-5 no-gutters">
+	  <div class="col-sm-12">
+	  	<h2 class="col-sm-12 statewise_title text-center">COVID-19 TRACKER INDIA</h2>
+        <div class="col-sm-12">
+        	<div class="row state">
+
+        	<div class="col-sm-2 stats_cont ">
+        		<div class="row">
+        		<div class="col-sm-12 text-center text-danger"><h4 class="stats_title">CONFIRMED</h4></div>
+        		<div class="col-sm-12 text-center text-danger"><h2 class="stats_num" id="cnf_case"></h2></div>
+        		<div class="col-sm-12 text-center text-danger"><span class="daily_stats" id="daily_cnf_case"></span></div>
+        		</div>
+        	</div>
+
+        	<div class="col-sm-2 stats_cont ">
+        		<div class="row">
+        		<div class="col-sm-12 text-center text-primary"><h4 class="stats_title">ACTIVE</h4></div>
+        		<div class="col-sm-12 text-center text-primary"><h2 class="stats_num" id="act_case"></h2></div>
+        		<div class="col-sm-12 text-center text-primary"><span class="daily_stats" id="daily_c_case"></span></div>
+        		</div>
+        	</div>
+
+        	<div class="col-sm-2 stats_cont">
+        		<div class="row">
+        		<div class="col-sm-12 text-center text-success "><h4 class="stats_title">RECOVERED</h4></div>
+        		<div class="col-sm-12 text-center text-success"><h2 class="stats_num" id="rec_case"></h2></div>
+        		<div class="col-sm-12 text-center text-success"><span class="daily_stats" id="daily_rec_case"></span></div>
+        		</div>
+        	</div>
+
+        	<div class="col-sm-2 stats_cont">
+        		<div class="row">
+        		<div class="col-sm-12 text-center text-dark "><h4 class="stats_title" id="clrC5">DEATHS</h4></div>
+        		<div class="col-sm-12 text-center text-dark "><h2 class="stats_num" id="death_case"></h2></div>
+        		<div class="col-sm-12 text-center text-dark"><span class="daily_stats" id="daily_death_case"></span></div>
+        		</div>
+        	</div>
+
+        	<div class="col-sm-2 stats_cont sample_txtd">
+        		<div class="row">
+        		<div class="col-sm-12 text-center cyan-text "><h4 class="stats_title">SAMPLE TESTED<sup class="text-danger">*</sup></h4></div>
+        		<div class="col-sm-12 text-center cyan-text "><h2 class="stats_num" id="sample_tested"></h2></div>
+        		<div class="col-sm-12 text-center cyan-text"><span class="daily_stats" id="daily_tested"></span></div>
+        		</div>
+        	</div>
+        	<div>
+	  	</div>
+	  </div> <!--End of Stats row-->
+	 </div> 
+	</div>
+	</div> 
+</div>		
+ <div class="container">
+    <div class="row">
+    	
+    	<div class="col-sm-12 float-left mt-5 text-primary ">
+    		<div class="chip   rounded " >
+                   <strong id="last_update" class="float-right"></strong>
+            </div>
+    	</div>
+   
+     <div class="col-sm-12 table-responsive-sm">
+     	
+
+      <table class="table">
+  <thead class="grey lighten-2">
+    <tr>
+      <th scope="col">STATES/UT</th>
+      <th scope="col" class="text-danger">CONFIRMED</th>
+      <th scope="col" class="text-primary">ACTIVE</th>
+      <th scope="col" class="text-success">RECOVERED</th>
+      <th scope="col" class="text-dark">DECEASED</th>
+      <th scope="col" class="cyan-text">TESTED</th>
+    </tr>
+  </thead>
+  <tbody id="data">
+    
+  </tbody>
+      </table>
+     </div>
+
+	  		
+	 
+	<div class="col-sm-12 float-left mt-5 text-primary ">
+    		<div class="chip   rounded " >
+                   <strong  class="float-right">* Sample Tests get updated everyday on 9:00 PM IST </strong>
+            </div>
+    	</div>	
+ </div>
+</div> 
+
+
+<div class="container-fluid">
+    <div class="row">
+        <h4 class="text-center col-sm-12">Cases Trend</h4>
+    </div>
+  <div class="row mt-5">
+    <div class="col"><canvas id="myChart" ></canvas></div>
+     <div class="col"><canvas id="myChart1" ></canvas></div>
+     <div class="col"><canvas id="myChart2" ></canvas></div>
+  </div>
+</div>
+
+
+
+<div class="container">
+  <div class="row mt-5">
+    <div class="col text-center">
+      
+      <strong>Made By Ravi Kant With <i class="fa fa-heart text-danger" ></i></strong>
+
+    </div>
+  </div>
+</div>
+
+
+
+<script type="text/javascript">
+		const date = new Date();  // 2009-11-10
+const month = date.toLocaleString('default', { month: 'long' });
+console.log(month);
+ console.log(date.getDate());
+var fda=date.getDate()+" "+month;
+console.log(fda);
+		$(document).ready(function(){
+
+			fetch('https://api.covid19india.org/data.json')
+			.then(function(res)
+               {
+               	return (res.json());
+               }
+				)
+			.then(function(data)
+			{     
+                var last=data.cases_time_series.length;
+                var last_data=data.tested.length;
+                console.log(data.statewise);
+               /* for(var i=1; i<=data.statewise.length-1;i++)
+                {
+                 console.log(data.statewise[i].active);
+                 console.log(data.statewise[i].confirmed);
+                 console.log(data.statewise[i].deaths);
+                 console.log(data.statewise[i].recovered);
+                 console.log(data.statewise[i].state);
+             }*/
+				console.log(data.cases_time_series[last-1]);
+        console.log(last_data);
+           console.log(data.tested[last_data-1]);
+        console.log(data.statewise[0].lastupdatedtime);
+        document.getElementById("last_update").innerHTML=data.statewise[0].lastupdatedtime;
+
+         var totalconfirmed=parseInt(data.statewise[0].confirmed).toLocaleString();
+         var totalrecovered=parseInt(data.statewise[0].recovered).toLocaleString();
+         var totaldeceased= parseInt(data.statewise[0].deaths).toLocaleString();
+         var totalactive=parseInt(data.statewise[0].active).toLocaleString();
+         var sample_tested=parseInt(data.tested[last_data-1].totalindividualstested).toLocaleString();
+         var daily_test= parseInt(data.tested[last_data-1].samplereportedtoday).toLocaleString();
+         
+
+        document.getElementById("cnf_case").innerHTML=totalconfirmed;
+        document.getElementById("rec_case").innerHTML=totalrecovered;
+        document.getElementById("death_case").innerHTML=totaldeceased;
+        document.getElementById("act_case").innerHTML=totalactive;
+        document.getElementById("sample_tested").innerHTML=sample_tested;
+
+        document.getElementById("daily_cnf_case").innerHTML="↑"+data.statewise[0].deltaconfirmed;
+        document.getElementById("daily_rec_case").innerHTML="↑"+data.statewise[0].deltarecovered;
+        document.getElementById("daily_death_case").innerHTML="↑"+data.statewise[0].deltadeaths;
+        document.getElementById("daily_tested").innerHTML="↑"+daily_test;
+        
+
+			});
+			
+		});
+
+   fetch('https://api.covid19india.org/data.json').then((response) => {
+    response.json().then((data) => {
+        console.log(data.statewise);
+        var count = data.statewise.length;
+        temp = "";
+        for (var i = 1; i < count; i++) 
+        {
+            var statewiseData = data.statewise[i];
+            //console.log(stateData.state);
+            //Add the data rows.
+            temp += "<tr>";
+            temp += "<td>" + statewiseData.state + "</td>";
+            temp += "<td>" + statewiseData.confirmed +"  [+  "+statewiseData.deltaconfirmed+"]"+"</td>";
+            temp += "<td>" + statewiseData.active + "</td>";
+            temp += "<td>" + statewiseData.recovered + "  [+  "+statewiseData.deltarecovered+"]"+ "</td>";
+            temp += "<td>" + statewiseData.deaths + "  [+  "+statewiseData.deltadeaths+"]"+ "</td>";
+
+            temp += "</tr>";  
+
+
+        }
+       document.getElementById("data").innerHTML = temp;
+    })
+}).catch((error) => {
+
+});
+
+
+
+const proxyurl = "https://cors-anywhere.herokuapp.com/";
+   fetch(proxyurl+'https://thevirustracker.com/free-api?global=stats').then((response) => {
+    response.json().then((data) => {
+        console.log(data);
+        //var count = data.statewise.length;
+        
+       //document.getElementById("data").innerHTML = temp;
+    })
+}).catch((error) => {
+
+});
+
+
+
+          function toggle()
+    {
+    
+     var element = document.body;
+   element.classList.toggle("dark-mode");
+
+    document.getElementById("togglebtn").classList.toggle("dark-text");
+    
+  
+    
+}
+
+
+
+	</script>
+    <script type="text/javascript" src="confirm.js"></script>
+</body>
+</html>

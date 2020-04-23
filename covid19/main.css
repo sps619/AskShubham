@@ -1,0 +1,795 @@
+html
+{
+  scroll-behavior: smooth;
+}
+
+body
+{
+   background-color: #fff;
+   color: #000;
+
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(Preloader_3.gif) center no-repeat #fff;
+}
+
+
+.navbar .nav_img
+{
+  height: 4rem;
+}
+.nav-link
+{
+	font-family: 'Helvetica', sans-serif;
+	font-weight: 600;
+}
+  
+.navbar ul li
+{
+   padding-right: 5em;
+}
+
+
+.read_more
+{
+  font-family: 'Arial',sans-serif;
+}
+
+
+.covid_defn
+{
+  
+  	
+  	font-family: 'Noto', sans-serif !important;
+  	font-weight: 600;
+	font-size: 1.2em;
+	margin-top: 6% !important;
+} 
+.alrt
+{
+	font-size: 1.2em;
+	font-weight: bold;
+	background-color: #ffebee  ;
+}
+
+.btns 
+{
+   margin: 0;
+   padding: 0;
+   font-weight: bold;
+   font-size: 1.3em;
+   margin-top: 7%;
+}
+.btns a
+{
+	margin-left: 0;
+}
+
+.covid_title h1
+{
+	
+	
+	font-family: 'Roboto Mono', monospace !important;
+}
+
+.main_title
+{
+	font-size: 2.5em;
+	font-family: courier;
+	font-weight: 600;
+}
+
+
+.stats_title
+{
+	font-size: 1.1em;
+	font-family: courier;
+	font-weight: bold;
+}
+
+.stats_num
+{
+	font-size: 1.3rem;
+	font-family: 'Arial', sans-serif;
+	font-weight: 700;
+}
+.daily_stats
+{
+	font-size: 1rem;
+	font-weight: bold;
+		font-family: 'Arial', sans-serif;
+}
+
+
+
+.state_title h2 
+{
+	font-size: 1.7em;
+	font-family: courier;
+	font-weight: 700;
+}
+
+
+ .state_title h1
+{
+	font-size: 1.8em;
+	font-family: courier;
+	font-weight: bold;
+}
+
+.covid_sym
+{
+	background-color:#0e2243;
+}
+
+.cont_title h1
+{
+	color:#fff;
+	font-size: 2em;
+	font-family: 'Arial',sans-serif;
+	padding-top: 3%;
+}
+
+.cont_img_title
+{
+	padding-top: 10%;
+	text-align: center;
+	color: #51E39B;
+	font-family: 'Arial',sans-serif;
+}
+.cont_img
+{
+	padding-top: 5%;
+}
+
+.symp_title 
+{
+	color:#fff;
+	font-size: 2.2em;
+	font-family: 'Arial',sans-serif;
+}
+.sympt_img{
+	padding-top: 5%;
+}
+
+.prvnt_title
+{
+	font-size: 2.2em;
+	font-family: 'Arial',sans-serif;
+	font-weight: bold;
+	padding: 1em 0 1em 0;
+}
+.card-title 
+{
+	font-family: 'Arial' ,sans-serif;
+	font-weight: bold;
+	font-size: 2em;
+}
+.card .card-body .card-text 
+{
+ 
+ font-family: 'Arial',sans-serif;
+ font-size: 1.2em;
+}
+.hand_san
+{
+	height: 19em;
+}
+
+.resource_title h1
+{
+	font-style: 'Arial',sans-serif;
+	font-weight: 600;
+}
+
+.list-group-item a
+{
+	font-family: 'Helvetica',sans-serif;
+	font-size: 1.1em;
+}
+
+
+.note_ p
+{
+  font-family: courier;
+}
+
+
+
+
+
+
+
+@media only screen and   (max-width: 1120px) and  (min-width:990px ) 
+{
+	.hand_san
+  {
+	height: 15em;
+   }
+   .card .card-body .card-text 
+   {
+ 
+ font-family: 'Arial',sans-serif;
+ font-size: 1.2em;
+
+  }
+   .card-title 
+   {
+	
+	font-size: 1.5em;
+  }
+}
+
+
+@media only screen and (max-width: 990px) and (min-width:770px )
+{
+	.illus img
+	{
+		height: 25rem;
+
+	}
+	.covid_title h1
+      {
+	      font-size: 2em;
+     }
+
+     .cont_img img
+     {
+     	height: 5em;
+     }    
+     .cont_title h1
+    {
+	font-size: 1.7em;
+	font-weight: 500;
+	padding-top: 3%;
+    }
+
+   .cont_img_title
+    {
+	padding-top: 10%;
+	text-align: center;
+	color: #51E39B;
+	font-family: 'Arial',sans-serif;
+    }
+    .cont_img_title h4
+    {
+	font-size: 1.2em;
+    }
+    .cont_img
+    {
+	padding-top: 5%;
+    }
+
+   .symp_title 
+   {
+	
+	font-size: 1.7em;
+	font-weight: 500;
+	font-family: 'Arial',sans-serif;
+    }
+    .sympt_img{
+	padding-top: 4%;
+     } 
+     .sympt_img img
+     {
+        height: 15em;
+     }
+       .card-img-top
+    {
+  	  
+    }
+    .card-title 
+    {
+	font-family: 'Arial' ,sans-serif;
+	font-weight: bold;
+	font-size: 1.5em;
+    }
+     .card .card-body .card-text 
+    {
+ 
+     font-family: 'Arial',sans-serif;
+     font-size: 1em;
+    }
+     .hand_san
+     {
+	height: 13em;
+     }
+}  
+@media only screen and (max-width: 770px) and (min-width:570px )
+{
+	.col-md-6
+	{
+		padding: 0;
+		margin: 0;
+		width: 50%;
+	}
+	.illus img
+	{
+		height: 25rem;
+
+	}
+	   .btns
+	   {
+	   	margin-top: 1.5em;
+	   }
+	.btns .btn-md
+	{
+		padding-left: 1em;
+		text-align: center;
+		margin-top: 1em;
+		
+		
+	}
+	.covid_title h1
+      {
+	      font-size: 1.7em;
+     }
+     .covid_defn
+     {
+  
+  	  font-weight: 600;
+	  font-size: 1em;
+     } 
+
+
+      .cont_img img
+     {
+     	height: 5em;
+     }    
+     .cont_title h1
+    {
+	font-size: 1.7em;
+	font-weight: 500;
+	padding-top: 3%;
+    }
+
+    .cont_img_title
+     {
+	padding-top: 10%;
+	text-align: center;
+	color: #51E39B;
+	font-family: 'Arial',sans-serif;
+    }
+    .cont_img_title h4
+    {
+	font-size: 1.2em;
+    }
+    .cont_img
+    {
+	padding-top: 5%;
+    }
+
+   .symp_title 
+   {
+	
+	font-size: 1.7em;
+	font-weight: 500;
+	font-family: 'Arial',sans-serif;
+    }
+    .sympt_img{
+	padding-top: 4%;
+     } 
+     .sympt_img img
+     {
+        height: 15em;
+     }
+        .card-title 
+      {
+	font-family: 'Gilroy' ,sans-serif;
+	font-weight: bold;
+	font-size: 1.1em;
+    }
+   .card .card-body .card-text 
+   {
+ 
+   font-family: 'Arial',sans-serif;
+   font-size: 1em;
+   }
+    .hand_san
+    {
+	height: 10em;
+   }
+   .list-group
+   {
+   	padding: 0;
+   	width: 100%;
+   }
+    .list-group-item 
+{
+     width: 100%;
+}
+
+}
+
+@media only screen and (max-width: 570px) and (min-width:430px )
+{
+   .covid_title h1
+      {
+	      font-size: 2em;
+     }
+     .covid_defn
+     {
+  
+  	  font-weight: 600;
+	  font-size: 1em;
+     } 
+      .btns 
+   {
+   
+   font-size: 1.3em;
+   margin-top: 3%;
+
+    }
+    .illus img
+	{
+		height: 15rem;
+		margin-left: 7em;
+
+	}
+	.main_title
+     { 
+	font-size: 1.9em;
+	
+	font-weight: 600;
+    }
+     .col-sm-3
+    {
+    max-width: 40%;
+    margin-left: 10%;
+    }
+    .stats_cont
+	{
+	    margin-top: 7%;	
+	}
+	.state_title h2 
+    {
+	font-size: 1.5em;
+	font-family: courier;
+	font-weight: 700;
+    }
+
+
+    .state_title h1
+    {
+	font-size: 1.4em;
+	font-family: courier;
+	font-weight: bold;
+    }
+
+
+    .col-sm-8
+     {
+     	max-width: 60%;
+     }
+     .col-sm-4
+     {
+     	max-width: 30%;
+     }
+    .cont_img img
+     {
+     	height: 4em;
+     }    
+     .cont_title h1
+    {
+	font-size: 1.2em;
+	font-weight: 500;
+	padding-top: 3%;
+    }
+
+    .cont_img_title
+     {
+	padding-top: 10%;
+	text-align: center;
+	color: #51E39B;
+	font-family: 'Arial',sans-serif;
+    }
+
+    .cont_img_title h4
+    {
+	font-size: 1em;
+    }
+    .cont_img
+    {
+	padding-top: 5%;
+    }
+
+   .symp_title 
+   {
+	
+	font-size: 1.2em;
+	font-weight: 500;
+	font-family: 'Arial',sans-serif;
+    }
+    .sympt_img{
+	padding-top: 4%;
+     } 
+     .sympt_img img
+     {
+        height: 10em;
+     }
+     .card-img-top
+     {
+     	height: 15em;
+     	width: 15em;
+     	margin-left: 25%;
+     }
+     .card-title 
+     {
+	font-family: 'Arial' ,sans-serif;
+	font-weight: bold;
+	font-size: 1.5em;
+    }
+     .resource_title h1
+  {
+  font-style: 'Arial',sans-serif;
+  font-weight: 600;
+  font-size: 1.5em;
+  } 
+
+     
+}
+
+@media only screen and (max-width: 500px) 
+{
+    .cont_img img
+     {
+     	 height: 5em;
+     } 
+     .col-sm-8
+     {
+     	max-width: 60%;
+     }
+     .col-sm-4
+     {
+     	max-width: 30%;
+     }
+     .cont_title
+     {
+        max-width: 40%;
+     } 
+     .cont_title h1
+    {
+    	font-size: 1.7em;
+	    font-weight: 500;
+	    padding-top: 3%;
+    }
+
+    .cont_img_title
+     {
+	   padding-top: 12%;
+	   text-align: center;
+	     color: #51E39B;
+	    font-family: 'Arial',sans-serif;
+    }
+    .cont_img_title h4
+    {
+      	font-size: 1em;
+    }
+    .cont_img
+    {
+    	padding: 0;
+    	margin:0;
+	   padding-top: 5%;
+    }
+
+   .symp_title 
+   {
+	
+	  font-size: 1.7em;
+	  font-weight: 500;
+	  font-family: 'Arial',sans-serif;
+    }
+    .sympt_img{
+	    padding-top: 4%;
+     } 
+     .sympt_img img
+     {
+        height: 15em;
+     }
+          .card-title 
+      {
+	     font-family: 'Arial' ,sans-serif;
+	    font-weight: bold;
+	    font-size: 1.5em;
+   }
+   .card .card-body .card-text 
+    {
+ 
+       font-family: 'Arial',sans-serif;
+     font-size: 1.2em;
+   }
+}
+@media only screen and (max-width: 430px) and (min-width:270px )
+{
+	.covid_title h1
+      {
+	      font-size: 1.5em;
+     }
+     .covid_defn
+     {
+  
+  	  font-weight: 500;
+	  font-size: 1em;
+     } 
+     .main_title
+     { 
+	font-size: 1.4em;
+	font-family: courier;
+	font-weight: bold;
+    }
+    .col-sm-3
+    {
+    max-width: 30%;
+    margin-left: 7%;
+    }
+    .stats_cont
+	{
+	    margin-top: 7%;
+	    margin-left: 15%;	
+	}
+	.state_title h2 
+    {
+	font-size: 1.2em;
+	font-family: courier;
+	font-weight: 700;
+    }
+
+
+    .state_title h1
+    {
+	font-size: 1.4em;
+	font-family: courier;
+	font-weight: bold;
+    }
+    .stats_row
+    {
+    	margin-left: 10%;
+    }
+      .cont_title h1
+      {
+	color:#fff;
+	font-size: 2em;
+	font-family: 'Arial',sans-serif;
+	padding-top: 3%;
+	text-align: center;
+	padding-left: 50%;
+    }
+        .resource_title h1
+    {
+  font-style: 'Arial',sans-serif;
+  font-weight: 600;
+  font-size: 1.5em;
+   } 
+
+  .list-group-item a
+  {
+    font-size: .8em;
+  }
+
+}
+@media only screen and (max-width: 270px) 
+{
+	.covid_title h1
+      {
+	      font-size: 1.4em;
+     }
+     .covid_defn
+     {
+  
+  	  font-weight: 500;
+	  font-size: 1em;
+     } 
+
+     .col-sm-3
+    {
+    max-width: 50%;
+    margin-top: 10%;
+    }
+    .stats_cont
+	{
+	    margin-top: 3%;	
+	}
+	.stats_title
+    {
+	font-size: .8em;
+	font-family: courier;
+	font-weight: bold;
+    }
+
+    .stats_num
+    {
+	font-size: 1.1rem;
+
+	font-weight: 600;
+    }
+    .daily_stats
+   {
+	font-size: .9rem;
+		
+    }
+
+    .main_title
+     { 
+	font-size: 1.1em;
+	
+	font-weight: 600;
+    }
+
+       .state_title h2 
+    {
+	font-size: .9em;
+	font-family: courier;
+	font-weight: 700;
+    }
+
+
+    .state_title h1
+    {
+	font-size: 1.1em;
+	font-family: courier;
+	font-weight: bold;
+    }
+        .resource_title h1
+  {
+  
+  font-size: 1.5em;
+  } 
+  .list-group-item a
+  {
+    font-size: 1.1em;
+  }
+
+}
+
+@media only screen and (max-width: 220px) 
+{
+	.col-sm-4
+	{
+		max-width: 100%;
+		padding-left: 30%;
+	}
+	.col-sm-8
+	{
+		max-width: 100%;
+		padding-left: 20%;
+	}
+	.cont_img img
+	{
+		max-width: 100%;
+		height: 5em;
+	}
+	.sympt_img{
+	padding-top: 5%;
+
+     }
+     .sympt_img img
+     {
+	     height: 7em; 
+       }
+}
+@media only screen and (max-width: 170px) 
+{
+ .col-sm-3
+    {
+     max-width: 100%;
+    margin-top: 7%;
+    }
+    .col-sm-4
+    {
+    	max-width: 100%;
+    }
+}    

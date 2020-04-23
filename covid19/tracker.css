@@ -1,0 +1,422 @@
+
+@font-face {
+    font-family: 'archiaregular';
+    src: url('font/Archia/archia-regular-webfont.eot');
+    src: url('font/Archia/archia-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/Archia/archia-regular-webfont.woff2') format('woff2'),
+         url('font/Archia/archia-regular-webfont.woff') format('woff'),
+         url('font/Archia/archia-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body
+{
+   background-color: #fff;
+   color: #000;
+}
+
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url(Preloader_3.gif) center no-repeat #fff;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+.dark-text {
+  
+  color: white;
+}
+
+.navbar .nav_img
+{
+  height: 4rem;
+}
+.nav-link
+{
+    font-family: 'Helvetica', sans-serif;
+    font-weight: 600;
+}
+  
+.navbar ul li
+{
+   padding-right: 5em;
+}
+
+
+.track_title
+{
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-weight: bold;
+}
+
+.case_box
+{
+    font-weight: bold;
+    font-family: 'Roboto Mono', monospace !important;
+    font-size: 1.1em;
+}
+.daily_cnf_case
+{
+    font-size: .5em !important;
+}
+
+.statewise_title
+{
+    font-family: Courier;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+
+.world_title
+{
+font-family: Courier;
+font-size: 1.5rem;
+font-weight: bold;
+}
+
+table th
+{
+    font-family: 'Gilroy', sans-serif;
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+}
+
+.state
+{
+    margin-left: 10%;
+    margin-top: 6%;
+}
+
+.stats_title
+{
+    font-size: 1.1em;
+    font-family: courier;
+    font-weight: bold;
+}
+
+.stats_num
+{
+    font-size: 1.3rem;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 700;
+}
+.daily_stats
+{
+    font-size: 1.2em;
+        font-family: 'Gilroy', sans-serif;
+}
+
+
+
+ tr td
+{
+  font-family: 'Gilroy' sans-serif;
+  font-size: 1em;
+  
+}
+
+.table-responsive-sm
+{
+   overflow-y:auto; 
+     max-height: 30em;
+     overflow-x: auto;
+     max-width: 100%;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 770px)
+{
+  .case_box
+{
+    font-weight: bold;
+    font-family: 'Roboto Mono', monospace !important;
+    font-size: 1em;
+
+}
+.navbar li a
+{
+ padding-left: 0; 
+    font-weight: 800;
+    font-size: 1.2em;
+
+}
+
+
+}
+
+
+@media only screen and (max-width: 570px)
+{
+    .navbar .nav_img
+   {
+  height: 2.5rem;
+   }
+    .case_box
+    {
+      margin-top: 1.4em;
+    }
+
+    
+
+
+
+ .col-sm-2
+{
+    max-width: 30%;
+}
+.statewise_title
+{
+    margin-left: 5%;
+}
+.state
+{
+    padding-left: 0;
+    
+}
+
+.stats_title
+{
+    font-size: 1em;
+    font-family: courier;
+    font-weight: bold;
+}
+
+.stats_num
+{
+    font-size: 1.1rem;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 700;
+}
+.daily_stats
+{
+    font-size: 1.1rem;
+        font-family: 'Arial',sans-serif;
+}
+
+
+.table-responsive-sm
+{
+   overflow-y:auto; 
+     max-height: 30em;
+     overflow-x: auto;
+     max-width: 100%;
+}
+
+thead th 
+{
+    font-size: .9em;
+}
+ table td
+ {
+    font-size: .8em;
+
+ }
+ .stats_cont
+    {
+        margin-top: 10%;    
+    }
+
+    .sample_txtd
+   {
+    padding-left:10em;
+    padding-top: 3%; 
+
+   }
+}
+
+
+@media only screen and (max-width: 485px)
+{
+    .stats_cont
+    {
+        margin-top: 10%;    
+    }
+}
+
+@media only screen and (min-width: 570px ) and (max-width: 950px ) 
+{
+    .navbar .nav_img
+   {
+  height: 2.5rem;
+   }
+   .stats_title
+   {
+    font-size: 1em;
+   }
+   .sample_txtd
+   {
+    padding-left:30%;
+    padding-top: 5%; 
+
+   }
+ }  
+
+@media only screen and (min-width: 700px ) and (max-width: 950px ) 
+
+{
+   .sample_txtd
+   {
+       padding: 0;
+       margin: 0;
+
+   }
+}
+
+
+
+
+@media only screen and (max-width: 700px)
+{
+    .col-sm-2
+    {
+        width: 20%;
+    }
+    .state
+    {
+        
+    }
+    .stats_cont
+    {
+        margin-left: 5%;
+    }
+}
+@media only screen and (max-width: 500px)
+{
+      .col-sm-2
+{
+    width: 100%;
+}
+  .stats_cont
+  {
+     margin-left:5%;
+     width: 30%;
+     padding-top: 1em;
+     padding-right: 1em;
+  }
+
+    .state
+{
+    
+    margin-left: 18%;
+
+}
+.statewise_title
+{
+    text-align: center;
+
+}
+
+.stats_title
+{
+    font-size: 1em;
+    font-family: courier;
+    font-weight: bold;
+}
+
+.stats_num
+{
+    font-size: 1.2rem;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 700;
+}
+.daily_stats
+{
+    font-size: 1.1rem;
+        font-family: courier;
+}
+
+ .sample_txtd
+   {
+    padding-left:5em;
+     
+
+   }
+
+}
+@media only screen and (max-width: 990px)
+{
+.illus img
+{
+  height: 22em;
+  width: 27em;
+  text-align: center;
+}
+.togll
+{
+    margin-left: 20%;
+}
+}
+
+@media only screen and (max-width: 390px)
+{
+.statewise_title
+{
+    font: 1.4rem 'Gilory',sans-serif;
+    font-weight: bold;
+}
+.stats_title
+{
+    font-size: .9rem;
+    font-family:'Courier New',sans-serif;
+    font-weight: 500;
+}
+
+.stats_num
+{
+    font-size: 1rem;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 600;
+}
+.daily_stats
+{
+    font-size: .9rem;
+        font-family: 'Arial',sans-serif;
+}
+.state
+{
+    padding: 0;
+    margin-left:  1em;
+    
+}
+ .stats_cont
+ {
+    padding-left: 2em;
+
+ }
+.col-sm-2
+{
+    max-width: 65%;
+}
+.sample_txtd
+   {
+    padding-left:5em;
+     
+
+   }
+}
+
+@media only screen and (max-width: 325px)
+{
+  .col-sm-2
+  {
+    width: 60%;
+  }
+}
+

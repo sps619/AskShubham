@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+
+	<style>
+.pdfobject-container { height: 50rem; border: 1rem solid #000; }
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(Preloader_3.gif) center no-repeat #fff;
+}
+.navbar .nav_img
+{
+  height: 4rem;
+}
+.nav-link
+{
+	font-family: 'Helvetica', sans-serif;
+	font-weight: 600;
+}
+  
+.navbar ul li
+{
+   padding-right: 5em;
+}
+
+
+</style>
+
+
+	   <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1" >
+      
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+
+
+
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css">
+  
+	<script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> 
+	</script> 
+	
+
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Google Fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.1/css/mdb.min.css" rel="stylesheet">
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.1/js/mdb.min.js"></script>
+
+
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light light-color">
+    <a class="navbar-brand" href="#"><img src="coronavirus.png" class="img-fluid nav_img"  height="20" ></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item ">
+               <a class="nav-link waves-effect waves-light" href="main.html" id="clrC">Home </a>
+            </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle waves-effect waves-light" id="navbarDropdownMenuLink"               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">COVID-19 TRACKER</a>
+                <div class="dropdown-menu dropdown-info" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item waves-effect waves-light" href="tracker.html">India</a>
+                    <a class="dropdown-item waves-effect waves-light" href="worldwide.html">Worldwide</a>
+                  
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link waves-effect waves-light" id="clrC2" href="#">FAQs</a>
+            </li>
+            <li class="nav-item"> 
+            
+                 <a class="btn-floating btn-sm btn-light mt-2" onclick="toggle()" id="togglebtn">Try Dark Mode !</a>
+            </li>         
+           
+        </ul>
+        
+    </div>
+</nav>
+
+
+	<div class="se-pre-con"></div>
+<div id="example1" class="pdfobject-container"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.1.1/pdfobject.min.js"></script>
+<script>PDFObject.embed("FAQ.pdf", "#example1");</script>
+</body>
+ <script type="text/javascript">
+   $(window).on('load',function() {
+    // Animate loader off screen
+    $(".se-pre-con").fadeOut("slow");;
+  });
+ </script>
+</html>

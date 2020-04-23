@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Covid-19 Tracker</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1" >
+      
+
+      <link rel="icon" href="shortcut.png">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+
+
+
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css">
+  
+	<script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> 
+	</script> 
+	
+
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Google Fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.1/css/mdb.min.css" rel="stylesheet">
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.1/js/mdb.min.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,800&display=swap" rel="stylesheet">
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+ <link rel="stylesheet" type="text/css" href="main.css">
+ <script type="text/javascript" src="script.js"></script>
+ 
+ <script type="text/javascript">
+   $(window).on('load',function() {
+    // Animate loader off screen
+    $(".se-pre-con").fadeOut("slow");;
+  });
+ </script>
+</head>
+<body>
+ <!--loader-->
+ <div class="se-pre-con"></div>
+ <!--/Loader End-->
+
+ <!--Navbar-->
+
+   <nav class="navbar navbar-expand-lg navbar-light light-color">
+    <a class="navbar-brand" href="#"><img src="coronavirus.png" class="img-fluid nav_img"  height="20" ></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item ">
+               <a class="nav-link waves-effect waves-light" href="index.html" id="clrC">Home </a>
+            </li>
+             <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle waves-effect waves-light" id="navbarDropdownMenuLink"               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resources</a>
+                <div class="dropdown-menu dropdown-info" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item waves-effect waves-light" href="">Essentials</a>
+                    <a class="dropdown-item waves-effect waves-light" href="#resource">Helfpfull Link</a>
+                  
+                </div>
+            </li>
+
+             <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle waves-effect waves-light" id="navbarDropdownMenuLink"               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">COVID-19 TRACKER</a>
+                <div class="dropdown-menu dropdown-info" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item waves-effect waves-light" href="tracker.html">India</a>
+                    <a class="dropdown-item waves-effect waves-light" href="worldwide.html">Worldwide</a>
+                  
+                </div>
+            </li>
+
+
+            <li class="nav-item"> 
+            
+                 <a class="btn-floating btn-sm btn-light mt-2" onclick="toggle()" id="togglebtn">Try Dark Mode !</a>
+            </li>         
+           
+        </ul>
+        
+    </div>
+</nav>
+
+ <!--Navbar End-->
+
+<!--Covid Intro-->
+<div class="container">
+  <div class="row mt-5 main_box">
+    <div class="col-md-6 covid_title">
+        <span class="rounded px-2 text-danger alrt"><i class="fa fa-info-circle"> </i> covid-19 alert</span>
+            <h1 class="">Stay at Home <i class="fa fa-home text-success"></i></h1>
+            <h1 class="">Save the World <i class="fa fa-globe-asia text-primary"></i></h1>
+      
+            <p class="deep-orange-text covid_defn mt-3">Covid-19 is a member of coronavirus family discovered in 2019 that causes range of health issue in human including common cold and breathing problem <a href="covidpdf.html" class="read_more text-muted">read more</a></p>
+           <div class="col-sm-12 btns">
+               <a href="#" class="rounded btn btn-danger btn-md">Check Sympotms</a>
+               <a href="#" class="rounded btn btn-success btn-md">Preventions</a>
+           </div>
+    </div>
+
+        <div class="col-md-6 illus">
+             <img src="covidfight.png" class="img-fluid">
+        </div>
+  </div>
+</div>
+
+<!--Covid Intro End-->
+
+
+<!--Covid Track Title-->
+<div class="container-fluid">
+  <div class="row mt-5 no-gutters">
+    <div class="col-sm-12  text-center">
+      <h2 class="main_title">COVID-19 TRACKER INDIA</h2>
+    </div>
+  </div>
+</div>
+<!--Covid Track Title End-->
+
+		
+
+<!--Covid Tracker India Stats-->
+<div class="container-fluid">
+	<div class="row mt-5 no-gutters">
+        <div class="col-sm-12">
+        	<div class="row state">
+
+        	<div class="col-sm-3 stats_cont ">
+        		<div class="row">
+        		<div class="col-sm-12 text-center text-danger"><h4 class="stats_title">CONFIRMED</h4></div>
+        		<div class="col-sm-12 text-center text-danger"><h2 class="stats_num" id="cnf_case"></h2></div>
+        		<div class="col-sm-12 text-center text-danger"><span class="daily_stats" id="daily_cnf_case"></span></div>
+        		</div>
+        	</div>
+
+        	<div class="col-sm-3 stats_cont ">
+        		<div class="row">
+        		<div class="col-sm-12 text-center text-primary"><h4 class="stats_title">ACTIVE</h4></div>
+        		<div class="col-sm-12 text-center text-primary"><h2 class="stats_num" id="act_case"></h2></div>
+        		<div class="col-sm-12 text-center text-primary"><span class="daily_stats" id="daily_c_case"></span></div>
+        		</div>
+        	</div>
+
+        	<div class="col-sm-3 stats_cont">
+        		<div class="row">
+        		<div class="col-sm-12 text-center text-success "><h4 class="stats_title">RECOVERED</h4></div>
+        		<div class="col-sm-12 text-center text-success"><h2 class="stats_num" id="rec_case"></h2></div>
+        		<div class="col-sm-12 text-center text-success"><span class="daily_stats" id="daily_rec_case"></span></div>
+        		</div>
+        	</div>
+
+        	<div class="col-sm-3 stats_cont">
+        		<div class="row">
+        		<div class="col-sm-12 text-center text-dark "><h4 class="stats_title" id="clrC5">DEATHS</h4></div>
+        		<div class="col-sm-12 text-center text-dark "><h2 class="stats_num" id="death_case"></h2></div>
+        		<div class="col-sm-12 text-center text-dark"><span class="daily_stats" id="daily_death_case"></span></div>
+        		</div>
+        	</div>
+
+       
+         </div>
+	  </div> <!--End of Stats row-->
+	 </div> 
+	
+</div> 
+
+<!--Covid Tracker India Stats End-->
+
+
+<!--Covid Tracker  State -->
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-sm-12 state_title text-center"><h1 >COVID-19 CASES In Your State</h1><h2 id="headState" class="text-secondery"></h2></div>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="row mt-5 ">
+    <div class="col-sm-12">
+      <div class="row stats_row">
+        <div class="col-sm-3">
+            <div class="row">
+                 <div class="col-sm-12 text-center text-danger"><h4 class="stats_title">CONFIRMED</h4></div>
+                 <div class="col-sm-12 text-center text-danger"><h2 class="stats_num" id="state_cnf_case"></h2></div>
+                 
+                  <div class="col-sm-12 text-center text-danger"><h6 class="stats_num" id="daily_state_act_case"></h6></div>
+             </div>
+
+         </div>
+
+        <div class="col-sm-3">
+          <div class="row">
+                     <div class="col-sm-12 text-center text-primary"><h4 class="stats_title">ACTIVE</h4></div>
+                  <div class="col-sm-12 text-center text-primary"><h2 class="stats_num" id="state_act_case"></h2></div>
+                      
+                </div>
+        </div>
+
+
+        <div class="col-sm-3">
+          <div class="row">
+                <div class="col-sm-12 text-center text-success"><h4 class="stats_title">RECOVERED</h4></div>
+                <div class="col-sm-12 text-center text-success"><h2 class="stats_num" id="state_rec_case"></h2></div>
+                <div class="col-sm-12 text-center text-success"><h6 class="stats_num" id="daily_state_rec_case"></h6></div>
+                </div>  
+        </div>
+
+        <div class="col-sm-3">
+        <div class="row">
+            <div class="col-sm-12 text-center text-dark"><h4 class="stats_title" id="state_death_title">DEATHS</h4></div>
+            <div class="col-sm-12 text-center text-dark"><h2 class="stats_num" id="state_death_case"></h2></div>
+            <div class="col-sm-12 text-center text-dank"><h6 class="stats_num" id="daily_state_death_case"></h6></div>
+            </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Covid Tracker  State End-->
+
+
+
+<!--Cotagion and Symptoms-->
+<div class="container-fluid">
+  <div class="row py-3 mt-5 covid_sym">
+      <div class="col mt-4">
+      	<div class="col-sm-12 cont_title"><h1 class="text-center">CONTAGION</h1></div>
+      	 <div class="col-sm-12">
+      	 	<div class="row">
+
+      	 		<div class="col-sm-12 cont_main">
+      	 			<div class="row">
+      	 			<div class="col-sm-4 cont_img">
+      	 				<img src="agreement.png" class="img-fluid">
+      	 			</div>
+      	 			<div class="col-sm-8 cont_img_title"><h4>HUMAN CONTACT</h4></div>
+      	 			</div>
+      	 		</div>
+
+      	 		<div class="col-sm-12 cont_main">
+      	 			<div class="row">
+      	 			<div class="col-sm-4 cont_img">
+      	 				<img src="water.png" class="">
+      	 			</div>
+      	 			<div class="col-sm-8 cont_img_title"><h4> CONTAMINATED OBJECTS </h4></div>
+      	 			</div>
+      	 		</div>
+
+      	 		<div class="col-sm-12 cont_main ">
+      	 			<div class="row">
+      	 			<div class="col-sm-4 cont_img">
+      	 				<img src="airtran.png" class="img-fluid">
+      	 			</div>
+      	 			<div class="col-sm-8 cont_img_title">
+      	 				<h4> AIR TRANSMISSION</h4>
+      	 			</div>
+      	 			</div>
+      	 		</div>
+      	 	</div>
+      	 </div>
+      </div>
+
+      <div class="col mt-4 ">
+          <div class="col-sm-12 mt-3">
+            <h1 class="text-center text-light symp_title">SYMPTOMS</h1>
+          </div>
+           <div class="col-sm-12 text-center sympt_img">
+            <img src="symptoms.png" class="img-fluid">
+           </div>
+       
+      </div>
+  </div>
+</div>
+
+
+<!--Cotagion and Symptoms End-->
+
+
+<!--Prevention Card-->
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-12 prvnt_title text-center"><h2>PREVENTIONS</h2></div>
+	</div>
+</div>
+<!-- Card deck -->
+<div class="card-deck">
+
+  <!-- Card -->
+  <div class="card mb-4">
+
+    <!--Card image-->
+    <div class="view overlay">
+      <img class="card-img-top hand_san" src="sanitizers.png" alt="Card image cap">
+      <a href="#!">
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+
+    <!--Card content-->
+    <div class="card-body">
+
+      <!--Title-->
+      <h4 class="card-title text-center">Wash Your Hand</h4>
+      <!--Text-->
+      <p class="card-text text-center hand_txt">Wash your hand frequently and use sanitizers when outside home.</p>
+      <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+      
+
+    </div>
+
+  </div>
+  <!-- Card -->
+
+  <!-- Card -->
+  <div class="card mb-4">
+
+    <!--Card image-->
+    <div class="view overlay">
+      <img class="card-img-top" src="social_dist.png"
+        alt="Card image cap">
+      <a href="#!">
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+
+    <!--Card content-->
+    <div class="card-body ">
+
+      <!--Title-->
+      <h4 class="card-title text-center">Maintain Social Distance</h4>
+      <!--Text-->
+      <p class="card-text text-center"> Stay at home and maintain social distancing while outside .Don't gather. </p>
+      <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+     
+
+    </div>
+
+  </div>
+  <!-- Card -->
+
+  <!-- Card -->
+  <div class="card mb-4">
+
+    <!--Card image-->
+    <div class="view overlay ">
+      <img class="card-img-top " src="doc.jpg"
+        alt="Card image cap">
+      <a href="#!">
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+
+    <!--Card content-->
+    <div class="card-body ">
+
+      <!--Title-->
+      <h4 class="card-title text-center">Consult Your Doctor</h4>
+      <!--Text-->
+      <p class="card-text text-center mt-1 txt">Consult doctor or visit your nearest hospital if symptoms found</p>
+      <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+      
+
+    </div>
+
+  </div>
+  <!-- Card -->
+
+</div>
+<!-- Card deck -->
+<!--Prevention Card End-->
+
+<!--Helpfull Links-->
+<div class="container-fluid" id="resource">
+  <div class="row mt-3 ">
+    
+    <div class="col-sm-12 text-center  resource_title"><h1>Helpful Links</h1></div>
+    <div class="col-sm-12">
+    <ul class="res_list list-group list-group-flush">
+      <li class="list-group-item"></br>
+         <a href="https://www.mohfw.gov.in/pdf/coronvavirushelplinenumber.pdf" class="text-success">  <strong>→</strong> HELPLINE NUMBERS [BY STATES] </a>
+      </li>
+
+      <li class="list-group-item"> 
+         <a href="https://www.mohfw.gov.in/" class="text-success"> <strong>→</strong> MINISTRY OF HEALTH AND WELFARE , GOVERRNMENT OF INDIA </br></a>
+      </li>
+      <li class="list-group-item">
+        <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019" class="text-success"><strong>→</strong> WORLD HEALTH ORGANISATION [WHO] COVID-19  </a>
+
+      </li class="list-group-item">
+
+      <li class="list-group-item">
+      <a href="https://icmr.nic.in/content/covid-19" class="text-success"> <strong>→</strong> ICMR OFFICIAL </a> 
+      </li>
+
+      <li class="list-group-item">
+        <a href="https://covid.icmr.org.in/index.php/testing-labs-deatails" class="text-success"><strong>→</strong> LIST OF COVID-19 TEST LAB</a>
+       
+      </li>
+     </div>
+    
+    </ul>
+  </div>
+</div>
+<!--Helpfull Links End-->
+
+
+<div class="container">
+  <div class="row mt-5">
+  	
+    <div class="col-sm-12 text-center">
+      
+      <strong>Made by <i class="fa fa-heart text-danger" ></i></strong>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+	<div class="row mt-3">
+		<div class="col-sm-12 text-center note_">
+  		<p class="note note-primary"><strong>Disclaimer:</strong>
+          This information is sourced from crowdsource data and can be inaccurate. Do not panic & wait for government sources to verify and update official data. Data Powered by <a href="https://www.covid19india.org/" target="_blank" class="text-primary">COVID-19 INDIA</a>
+  		 </p>
+  	</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	$("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width , initial-scale=1">
+        <title>Screenshot Generator</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="https://askshubham.com/favicon.png" type="image/x-icon">
+        <link rel="icon" href="https://askshubham.com/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-N8N7QXQ');</script>
+        <!-- End Google Tag Manager -->
+    </head>
+    <body onload="noImage()">
+        <div class="main">
+          <h1>Web Screenshot Generator</h1>
+          <input type="text" name="" placeholder="Paste a url" id="input" autocomplete="off" autofocus />
+          <br />
+          <p>Width:</p><input type="text" name="" class="dim" value="1280" id="width" autocomplete="off" />
+          <p>Height:</p><input type="text" name="" class="dim" value="720" id="height" autocomplete="off" />
+          <button type="submit" onclick="generator()" id="submit">
+            Get Screenshot
+          </button>
+          <br />
+          <!--Home Button-->
+          <a href='https://askshubham.com/Screenshot-generator&utm_source=Screenshot-generator&utm_campaign=screenshot-generated-page'>
+            <button>Home</button>
+          </a>
+          
+<!-- Add font awesome icons to buttons (note that the fa-spin class rotates the icon) -->
+<button class="load" id="load">
+    <i class="fa fa-spinner fa-spin"></i>Loading
+  </button>
+          <img src="" id="img">
+        </div>
+        <script src="app.js"></script>
+      </body>
+    </html>

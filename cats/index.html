@@ -3,12 +3,11 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width , initial-scale=1">
-        <title>Cats</title>
+        <title>Cat Photos</title>
         <link rel="stylesheet" href="https://askshubham.com/screenshot-generator/style.css">
         <link rel="shortcut icon" href="https://askshubham.com/favicon.png" type="image/x-icon">
         <link rel="icon" href="https://askshubham.com/favicon.png" type="image/x-icon">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="cat.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
         <!-- Google Tag Manager -->
         <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -17,18 +16,25 @@
             })(window,document,'script','dataLayer','GTM-N8N7QXQ');</script>
         <!-- End Google Tag Manager -->
     </head>
-    <body onload="generator()">
-        <div class="main">
-          <h1>Cats</h1>
-          
-          <br />
-          <!--Home Button-->
-          <a href='https://askshubham.com/Screenshot-generator&utm_source=Screenshot-generator&utm_campaign=screenshot-generated-page'>
-            <button>Home</button>
-          </a>
-                    <img src="" id="img">
-        </div>
-        
-      </body>
-      
-    </html>
+<body>
+<div class="main">
+<script type="text/javascript">
+let url = 'https://aws.random.cat/meow';
+fetch(url)
+.then(res => res.json())
+.then((out) => {
+console.log('Checkout this JSON! ', out);
+var newData = JSON.stringify(out)
+var obj = JSON.parse(newData);
+img.src=obj.file;
+})
+.catch(err => { throw err });      
+</script>		
+<h1>Cats</h1>
+<img src="" id="img">
+<br />
+<!--One more cat Button-->
+<button onClick="window.location.reload();">New Cat</button>
+</div>
+</body>      
+</html>
